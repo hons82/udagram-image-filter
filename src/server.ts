@@ -30,7 +30,7 @@ const isImageUrl = require('is-image-url');
 
   /**************************************************************************** */
 
-  app.get("/filteredimage/", async (req, res) => {
+  app.get("/filteredimage/", async (req: Request, res: Response) => {
     const image_url = req.query.image_url as string;
 
     // Check if the image url is present in the request
